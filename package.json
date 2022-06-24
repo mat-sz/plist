@@ -1,6 +1,5 @@
 {
   "name": "plist",
-  "version": "0.0.0",
   "scripts": {
     "prepare": "npm run build",
     "test": "lerna run test",
