@@ -1,6 +1,5 @@
 node_modules
-yarn-error.log
-npm-error.log
+*.log
 .DS_Store
 
 lib
