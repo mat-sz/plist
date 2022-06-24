@@ -1,6 +1,6 @@
 {
   "name": "@plist/parse",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "An universal TypeScript library for parsing Apple's Property Lists. Supports binary, text and XML plists; works well in both browser and node.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -38,9 +38,9 @@
   "license": "BSD-3-Clause-Clear",
   "private": false,
   "dependencies": {
-    "@plist/common": "^0.0.0",
-    "@plist/xml.parse": "^0.0.0",
-    "@plist/binary.parse": "^0.0.0",
-    "@plist/openstep.parse": "^0.0.0"
+    "@plist/binary.parse": "^1.0.0",
+    "@plist/common": "^1.0.0",
+    "@plist/openstep.parse": "^1.0.0",
+    "@plist/xml.parse": "^1.0.0"
   }
 }

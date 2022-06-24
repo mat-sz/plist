@@ -1,6 +1,6 @@
 {
   "name": "@plist/plist",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "TypeScript library for parsing and serializing XML, OpenStep/NextStep and binary Property Lists, in browser and node.js.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -38,7 +38,7 @@
   "license": "BSD-3-Clause-Clear",
   "private": false,
   "dependencies": {
-    "@plist/parse": "^0.0.0",
-    "@plist/serialize": "^0.0.0"
+    "@plist/parse": "^1.0.0",
+    "@plist/serialize": "^1.0.0"
   }
 }
