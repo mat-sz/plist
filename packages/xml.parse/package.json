@@ -38,5 +38,8 @@
     "@plist/common": "^1.0.0",
     "base64-js": "^1.5.1",
     "fast-xml-parser": "^4.0.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

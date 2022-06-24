@@ -41,5 +41,8 @@
     "@plist/common": "^1.0.0",
     "@plist/openstep.serialize": "^1.0.0",
     "@plist/xml.serialize": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

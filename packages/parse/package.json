@@ -42,5 +42,8 @@
     "@plist/common": "^1.0.0",
     "@plist/openstep.parse": "^1.0.0",
     "@plist/xml.parse": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
