@@ -1,0 +1,5 @@
+{
+    "entry" = "value"; /* comment
+ */ "array" = ("a", "b", "c"); // another comment
+    // a comment
+}

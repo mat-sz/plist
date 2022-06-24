@@ -1,0 +1,6 @@
+__tests__
+jest.config.json
+yarn.lock
+.DS_Store
+yarn-error.log
+npm-error.log

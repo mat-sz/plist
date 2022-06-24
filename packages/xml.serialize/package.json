@@ -1,0 +1,41 @@
+{
+  "name": "@plist/xml.serialize",
+  "version": "0.0.0",
+  "description": "TypeScript library for serializing XML Property Lists, in browser and node.js.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "serialize",
+    "plist",
+    "propertylist",
+    "xml",
+    "typescript",
+    "browser",
+    "node",
+    "apple",
+    "macos",
+    "ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mat-sz/plist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mat-sz/plist/issues"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint src"
+  },
+  "homepage": "https://github.com/mat-sz/plist",
+  "author": "Mat Sz <contact@matsz.dev>",
+  "license": "BSD-3-Clause-Clear",
+  "private": false,
+  "dependencies": {
+    "base64-js": "^1.5.1",
+    "fast-xml-parser": "^4.0.8",
+    "@plist/common": "^0.0.0"
+  }
+}
