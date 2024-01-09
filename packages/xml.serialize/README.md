@@ -5,7 +5,7 @@ TypeScript library for serializing XML Property Lists, in browser and node.js.
 </p>
 
 <p align="center">
-<img alt="workflow" src="https://img.shields.io/github/workflow/status/mat-sz/plist/Node.js%20CI%20(yarn)">
+<img alt="workflow" src="https://img.shields.io/github/actions/workflow/status/mat-sz/plist/node.js.yml?branch=main">
 <a href="https://npmjs.com/package/@plist/xml.serialize">
 <img alt="npm" src="https://img.shields.io/npm/v/@plist/xml.serialize">
 <img alt="npm" src="https://img.shields.io/npm/dw/@plist/xml.serialize">

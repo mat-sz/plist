@@ -5,7 +5,7 @@ An universal TypeScript library for handing Apple's Property Lists. Supports bin
 </p>
 
 <p align="center">
-<img alt="workflow" src="https://img.shields.io/github/workflow/status/mat-sz/plist/Node.js%20CI%20(yarn)">
+<img alt="workflow" src="https://img.shields.io/github/actions/workflow/status/mat-sz/plist/node.js.yml?branch=main">
 <a href="https://npmjs.com/package/@plist/plist">
 <img alt="npm" src="https://img.shields.io/npm/v/@plist/plist">
 <img alt="npm" src="https://img.shields.io/npm/dw/@plist/plist">

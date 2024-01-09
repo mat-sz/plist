@@ -5,7 +5,7 @@ An universal TypeScript library for serializing Apple's Property Lists. Supports
 </p>
 
 <p align="center">
-<img alt="workflow" src="https://img.shields.io/github/workflow/status/mat-sz/plist/Node.js%20CI%20(yarn)">
+<img alt="workflow" src="https://img.shields.io/github/actions/workflow/status/mat-sz/plist/node.js.yml?branch=main">
 <a href="https://npmjs.com/package/@plist/serialize">
 <img alt="npm" src="https://img.shields.io/npm/v/@plist/serialize">
 <img alt="npm" src="https://img.shields.io/npm/dw/@plist/serialize">
