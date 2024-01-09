@@ -128,8 +128,6 @@ describe('openstep:parse', () => {
     });
   });
 
-  describe('integration', () => {});
-
   describe('invalid', () => {
     it('throws on invalid input', () => {
       expect(() => parse('{;}')).toThrow();

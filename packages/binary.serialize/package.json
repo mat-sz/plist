@@ -27,7 +27,6 @@
   },
   "scripts": {
     "prepare": "npm run build",
-    "test": "jest",
     "build": "tsc",
     "lint": "eslint src"
   },

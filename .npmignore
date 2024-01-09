@@ -1,5 +1,5 @@
 __tests__
-jest.config.json
+vitest.config.ts
 yarn.lock
 .DS_Store
 *.log
