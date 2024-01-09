@@ -34,5 +34,8 @@
   "license": "BSD-3-Clause-Clear",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.8"
   }
 }
