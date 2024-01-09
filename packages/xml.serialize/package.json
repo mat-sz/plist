@@ -32,7 +32,6 @@
   "homepage": "https://github.com/mat-sz/plist",
   "author": "Mat Sz <contact@matsz.dev>",
   "license": "BSD-3-Clause-Clear",
-  "private": false,
   "dependencies": {
     "@plist/common": "^1.0.0",
     "base64-js": "^1.5.1",

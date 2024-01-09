@@ -36,7 +36,6 @@
   "homepage": "https://github.com/mat-sz/plist",
   "author": "Mat Sz <contact@matsz.dev>",
   "license": "BSD-3-Clause-Clear",
-  "private": false,
   "dependencies": {
     "@plist/binary.parse": "^1.0.0",
     "@plist/common": "^1.0.0",

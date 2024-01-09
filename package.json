@@ -2,9 +2,10 @@
   "name": "plist",
   "scripts": {
     "prepare": "npm run build",
-    "test": "lerna run test",
-    "build": "lerna run build",
-    "lint": "lerna run lint"
+    "test": "yarn workspaces foreach -Api run test",
+    "build": "yarn workspaces foreach -Apti run build",
+    "lint": "yarn workspaces foreach -Api run lint",
+    "publish": "yarn workspaces foreach -Apti npm publish --tolerate-republish"
   },
   "workspaces": [
     "packages/*"
@@ -40,10 +41,10 @@
     "eslint": "^8.18.0",
     "husky": "^8.0.1",
     "jest": "^28.1.1",
-    "lerna": "^5.1.4",
     "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }
