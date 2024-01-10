@@ -1,5 +1,5 @@
 {
-  "name": "plist",
+  "name": "plist-workspace",
   "scripts": {
     "prepare": "npm run build",
     "test": "vitest",
