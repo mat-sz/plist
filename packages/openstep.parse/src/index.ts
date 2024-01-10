@@ -87,6 +87,12 @@ const consumeValue = (input: string): [Value, string] => {
     case '{':
       result = {};
 
+      [, input] = consumeWhitespaceAndComments(input);
+      if (input.charAt(0) === '}') {
+        [, input] = consumeToken(input, '}');
+        break;
+      }
+
       while (input.charAt(0) !== '}') {
         let key: Value, value: Value;
         [key, input] = consumeValue(input);
@@ -113,6 +119,12 @@ const consumeValue = (input: string): [Value, string] => {
     case '(':
       result = [];
 
+      [, input] = consumeWhitespaceAndComments(input);
+      if (input.charAt(0) === ')') {
+        [, input] = consumeToken(input, ')');
+        break;
+      }
+
       while (input.charAt(0) !== ')') {
         let value: Value, token: string | null;
         [value, input] = consumeValue(input);
@@ -131,8 +143,13 @@ const consumeValue = (input: string): [Value, string] => {
       [, input] = consumeToken(input, ')');
       break;
     case '<':
-      let array = new Uint8Array();
       let hexString = '';
+
+      [, input] = consumeWhitespaceAndComments(input);
+      if (input.charAt(0) === '>') {
+        [, input] = consumeToken(input, '>');
+        break;
+      }
 
       while (input.charAt(0) !== '>') {
         const digit = input.charAt(0);

@@ -52,6 +52,17 @@ describe('openstep:parse', () => {
   });
 
   describe('array', () => {
+    it('parses empty arrays', () => {
+      expect(parse('()')).toStrictEqual([]);
+      expect(
+        parse(`
+{
+  classes = (
+  );
+}`)
+      ).toStrictEqual({ classes: [] });
+    });
+
     it('parses string arrays', () => {
       expect(parse('("a", "b", "c")')).toStrictEqual(['a', 'b', 'c']);
       expect(parse('(a, b, c)')).toStrictEqual(['a', 'b', 'c']);
@@ -62,6 +73,13 @@ describe('openstep:parse', () => {
   describe('dict', () => {
     it('parses empty dicts', () => {
       expect(parse('{}')).toStrictEqual({});
+      expect(
+        parse(`
+{
+  classes = {
+  };
+}`)
+      ).toStrictEqual({ classes: {} });
     });
 
     it('parses dicts', () => {
