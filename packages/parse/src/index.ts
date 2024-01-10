@@ -1,4 +1,9 @@
-import { Value, PlistFormat, HEADER_BINARY } from '@plist/common';
+import {
+  Value,
+  PlistFormat,
+  HEADER_BINARY,
+  HEADER_OPENSTEP_UTF8,
+} from '@plist/common';
 import { parse as parseBinary } from '@plist/binary.parse';
 import { parse as parseXML } from '@plist/xml.parse';
 import { parse as parseOpenstep } from '@plist/openstep.parse';
@@ -17,7 +22,10 @@ export const detectFormat = (input: string | ArrayBuffer): PlistFormat => {
       return PlistFormat.XML;
     }
 
-    if (IS_ASCII.test(trim)) {
+    if (
+      input.trimStart().startsWith(HEADER_OPENSTEP_UTF8) ||
+      IS_ASCII.test(trim)
+    ) {
       return PlistFormat.OPENSTEP;
     }
 

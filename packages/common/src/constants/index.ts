@@ -3,6 +3,7 @@
 // So we just hardcode the correct value.
 export const EPOCH = 978307200000;
 export const HEADER_BINARY = 'bplist00';
+export const HEADER_OPENSTEP_UTF8 = '// !$*UTF8*$!';
 
 export enum PlistFormat {
   BINARY,
