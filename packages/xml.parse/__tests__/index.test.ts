@@ -1,4 +1,4 @@
-import { parse } from '../src';
+import { parse } from '../src/index.js';
 
 const decoder = new TextDecoder('utf-8');
 

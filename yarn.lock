@@ -2416,6 +2416,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "plist@workspace:."
   dependencies:
+    "@types/node": "npm:^20.10.8"
     "@typescript-eslint/eslint-plugin": "npm:^5.28.0"
     "@typescript-eslint/parser": "npm:^5.28.0"
     eslint: "npm:^8.18.0"

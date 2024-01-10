@@ -1,7 +1,7 @@
 import { PlistFormat } from '@plist/common';
 import { readFileSync } from 'fs';
 import path from 'path';
-import { detectFormat, parse } from '../src';
+import { detectFormat, parse } from '../src/index.js';
 
 const TEST_FILE_PATH = path.join(__dirname, '..', '..', '..', '__tests__');
 

@@ -1,6 +1,6 @@
 import path from 'path';
 import { readFileSync } from 'fs';
-import { parse } from '../src';
+import { parse } from '../src/index.js';
 
 const encoder = new TextEncoder();
 const TEST_FILE_PATH = path.join(

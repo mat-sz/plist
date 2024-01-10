@@ -30,7 +30,9 @@
   },
   "scripts": {
     "prepare": "npm run build",
-    "build": "tsc",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:esm": "tsc --module esnext --outDir lib/esm && echo '{\"type\": \"module\"}' > lib/esm/package.json",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs && echo '{\"type\": \"commonjs\"}' > lib/cjs/package.json",
     "lint": "eslint src"
   },
   "homepage": "https://github.com/mat-sz/plist",

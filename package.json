@@ -35,6 +35,7 @@
   "license": "BSD-3-Clause-Clear",
   "private": true,
   "devDependencies": {
+    "@types/node": "^20.10.8",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "eslint": "^8.18.0",

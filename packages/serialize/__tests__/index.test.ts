@@ -1,4 +1,4 @@
-import { serialize } from '../src';
+import { serialize } from '../src/index.js';
 
 describe('serialize', () => {
   it('', () => {});
