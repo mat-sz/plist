@@ -1,6 +1,6 @@
 {
   "name": "@plist/serialize",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An universal TypeScript library for serializing Apple's Property Lists. Supports binary, text and XML plists; works well in both browser and node.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -46,10 +46,10 @@
   "author": "Mat Sz <contact@matsz.dev>",
   "license": "BSD-3-Clause-Clear",
   "dependencies": {
-    "@plist/binary.serialize": "^1.0.0",
-    "@plist/common": "^1.0.0",
-    "@plist/openstep.serialize": "^1.0.0",
-    "@plist/xml.serialize": "^1.0.0"
+    "@plist/binary.serialize": "^1.1.0",
+    "@plist/common": "^1.1.0",
+    "@plist/openstep.serialize": "^1.1.0",
+    "@plist/xml.serialize": "^1.1.0"
   },
   "publishConfig": {
     "access": "public"

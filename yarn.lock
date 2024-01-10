@@ -287,23 +287,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plist/binary.parse@npm:^1.0.0, @plist/binary.parse@workspace:packages/binary.parse":
+"@plist/binary.parse@npm:^1.1.0, @plist/binary.parse@workspace:packages/binary.parse":
   version: 0.0.0-use.local
   resolution: "@plist/binary.parse@workspace:packages/binary.parse"
   dependencies:
-    "@plist/common": "npm:^1.0.0"
+    "@plist/common": "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
-"@plist/binary.serialize@npm:^1.0.0, @plist/binary.serialize@workspace:packages/binary.serialize":
+"@plist/binary.serialize@npm:^1.1.0, @plist/binary.serialize@workspace:packages/binary.serialize":
   version: 0.0.0-use.local
   resolution: "@plist/binary.serialize@workspace:packages/binary.serialize"
   dependencies:
-    "@plist/common": "npm:^1.0.0"
+    "@plist/common": "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
-"@plist/common@npm:^1.0.0, @plist/common@workspace:packages/common":
+"@plist/common@npm:^1.1.0, @plist/common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "@plist/common@workspace:packages/common"
   dependencies:
@@ -311,30 +311,30 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@plist/openstep.parse@npm:^1.0.0, @plist/openstep.parse@workspace:packages/openstep.parse":
+"@plist/openstep.parse@npm:^1.1.0, @plist/openstep.parse@workspace:packages/openstep.parse":
   version: 0.0.0-use.local
   resolution: "@plist/openstep.parse@workspace:packages/openstep.parse"
   dependencies:
-    "@plist/common": "npm:^1.0.0"
+    "@plist/common": "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
-"@plist/openstep.serialize@npm:^1.0.0, @plist/openstep.serialize@workspace:packages/openstep.serialize":
+"@plist/openstep.serialize@npm:^1.1.0, @plist/openstep.serialize@workspace:packages/openstep.serialize":
   version: 0.0.0-use.local
   resolution: "@plist/openstep.serialize@workspace:packages/openstep.serialize"
   dependencies:
-    "@plist/common": "npm:^1.0.0"
+    "@plist/common": "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
-"@plist/parse@npm:^1.0.0, @plist/parse@workspace:packages/parse":
+"@plist/parse@npm:^1.1.0, @plist/parse@workspace:packages/parse":
   version: 0.0.0-use.local
   resolution: "@plist/parse@workspace:packages/parse"
   dependencies:
-    "@plist/binary.parse": "npm:^1.0.0"
-    "@plist/common": "npm:^1.0.0"
-    "@plist/openstep.parse": "npm:^1.0.0"
-    "@plist/xml.parse": "npm:^1.0.0"
+    "@plist/binary.parse": "npm:^1.1.0"
+    "@plist/common": "npm:^1.1.0"
+    "@plist/openstep.parse": "npm:^1.1.0"
+    "@plist/xml.parse": "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
@@ -342,37 +342,37 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@plist/plist@workspace:packages/plist"
   dependencies:
-    "@plist/parse": "npm:^1.0.0"
-    "@plist/serialize": "npm:^1.0.0"
+    "@plist/parse": "npm:^1.1.0"
+    "@plist/serialize": "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
-"@plist/serialize@npm:^1.0.0, @plist/serialize@workspace:packages/serialize":
+"@plist/serialize@npm:^1.1.0, @plist/serialize@workspace:packages/serialize":
   version: 0.0.0-use.local
   resolution: "@plist/serialize@workspace:packages/serialize"
   dependencies:
-    "@plist/binary.serialize": "npm:^1.0.0"
-    "@plist/common": "npm:^1.0.0"
-    "@plist/openstep.serialize": "npm:^1.0.0"
-    "@plist/xml.serialize": "npm:^1.0.0"
+    "@plist/binary.serialize": "npm:^1.1.0"
+    "@plist/common": "npm:^1.1.0"
+    "@plist/openstep.serialize": "npm:^1.1.0"
+    "@plist/xml.serialize": "npm:^1.1.0"
   languageName: unknown
   linkType: soft
 
-"@plist/xml.parse@npm:^1.0.0, @plist/xml.parse@workspace:packages/xml.parse":
+"@plist/xml.parse@npm:^1.1.0, @plist/xml.parse@workspace:packages/xml.parse":
   version: 0.0.0-use.local
   resolution: "@plist/xml.parse@workspace:packages/xml.parse"
   dependencies:
-    "@plist/common": "npm:^1.0.0"
+    "@plist/common": "npm:^1.1.0"
     base64-js: "npm:^1.5.1"
     fast-xml-parser: "npm:^4.0.8"
   languageName: unknown
   linkType: soft
 
-"@plist/xml.serialize@npm:^1.0.0, @plist/xml.serialize@workspace:packages/xml.serialize":
+"@plist/xml.serialize@npm:^1.1.0, @plist/xml.serialize@workspace:packages/xml.serialize":
   version: 0.0.0-use.local
   resolution: "@plist/xml.serialize@workspace:packages/xml.serialize"
   dependencies:
-    "@plist/common": "npm:^1.0.0"
+    "@plist/common": "npm:^1.1.0"
     base64-js: "npm:^1.5.1"
     fast-xml-parser: "npm:^4.0.8"
   languageName: unknown
