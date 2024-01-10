@@ -1,10 +1,4 @@
-import {
-  Dictionary,
-  Value,
-  HEADER_BINARY,
-  EPOCH,
-  TextDecoder,
-} from '@plist/common';
+import { Dictionary, Value, HEADER_BINARY, EPOCH } from '@plist/common';
 
 const maxObjectSize = 100 * 1000 * 1000; // 100Meg
 const maxObjectCount = 32768;

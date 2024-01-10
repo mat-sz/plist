@@ -1,4 +1,4 @@
-import { Value, PlistFormat, HEADER_BINARY, TextDecoder } from '@plist/common';
+import { Value, PlistFormat, HEADER_BINARY } from '@plist/common';
 import { parse as parseBinary } from '@plist/binary.parse';
 import { parse as parseXML } from '@plist/xml.parse';
 import { parse as parseOpenstep } from '@plist/openstep.parse';

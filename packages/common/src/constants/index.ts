@@ -9,8 +9,3 @@ export enum PlistFormat {
   XML,
   OPENSTEP,
 }
-
-export const TextDecoder =
-  globalThis.TextDecoder || (require('util').TextDecoder as TextDecoder);
-export const TextEncoder =
-  globalThis.TextEncoder || (require('util').TextEncoder as TextDecoder);

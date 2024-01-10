@@ -1,10 +1,4 @@
-import {
-  Dictionary,
-  Value,
-  EPOCH,
-  HEADER_BINARY,
-  TextEncoder,
-} from '@plist/common';
+import { Dictionary, Value, EPOCH, HEADER_BINARY } from '@plist/common';
 
 interface EntryBase {
   id?: number;

@@ -1,6 +1,5 @@
 import path from 'path';
 import { readFileSync } from 'fs';
-import { TextEncoder } from 'util';
 import { parse } from '../src';
 
 const encoder = new TextEncoder();

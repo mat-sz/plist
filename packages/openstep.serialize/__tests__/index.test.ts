@@ -1,5 +1,4 @@
 import { serialize } from '../src';
-import { TextEncoder } from 'util';
 
 const encoder = new TextEncoder();
 
