@@ -54,6 +54,8 @@ const serializeValue = (value: Value): any => {
         return { array: value.map(serializeValue) };
       } else if (value instanceof Date) {
         return getStringNode('date', ISODateString(value));
+      } else if (value instanceof Uint8Array) {
+        return getStringNode('data', fromByteArray(value));
       } else if (value instanceof ArrayBuffer) {
         return getStringNode('data', fromByteArray(new Uint8Array(value)));
       } else {
