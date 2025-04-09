@@ -1,6 +1,6 @@
 {
   "name": "@plist/openstep.serialize",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "TypeScript library for serializing OpenStep/NEXTStep Property Lists, in browser and node.js.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
