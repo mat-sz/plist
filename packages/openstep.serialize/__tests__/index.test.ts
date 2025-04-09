@@ -6,11 +6,12 @@ describe('openstep:serialize', () => {
   describe('string', () => {
     it('serializes unquoted strings', () => {
       expect(serialize('test')).toBe('test');
-      expect(serialize('testTEST1234_$+/:.-')).toBe('testTEST1234_$+/:.-');
+      expect(serialize('testTEST1234_.-')).toBe('testTEST1234_.-');
     });
 
     it('serializes quoted strings', () => {
       expect(serialize('test abc def')).toBe('"test abc def"');
+      expect(serialize('testTEST1234_$+/:.-')).toBe('"testTEST1234_$+/:.-"');
     });
 
     it('serializes numbers', () => {

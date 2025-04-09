@@ -1,6 +1,6 @@
 import { Value } from '@plist/common';
 
-const UNQUOTED_STRING_REGEX = /^[A-Za-z0-9_$+\/:.-]+$/;
+const UNQUOTED_STRING_REGEX = /^[A-Za-z0-9_.-]+$/;
 
 const escapeString = (string: string) =>
   JSON.stringify(string)
