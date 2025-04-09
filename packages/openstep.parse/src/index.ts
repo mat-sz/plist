@@ -182,9 +182,10 @@ const consumeValue = (input: string): [Value, string] => {
       [, input] = consumeToken(input, '>');
       break;
     case '"':
+    case "'":
       result = '';
 
-      while (input.charAt(0) !== '"') {
+      while (input.charAt(0) !== char) {
         result += input.charAt(0);
         if (input.charAt(0) === '\\') {
           result += input.charAt(1);
@@ -194,13 +195,13 @@ const consumeValue = (input: string): [Value, string] => {
         }
 
         if (input.length === 0) {
-          throw new Error("No matching '\"' found");
+          throw new Error(`No matching ${char} found`);
         }
       }
 
       result = unescapeString(result);
 
-      [, input] = consumeToken(input, '"');
+      [, input] = consumeToken(input, char);
       break;
     default:
       if (!UNQUOTED_STRING_CHAR_REGEX.test(char)) {

@@ -6,6 +6,7 @@ describe('openstep:parse', () => {
   describe('string', () => {
     it('parses strings', () => {
       expect(parse('"test"')).toBe('test');
+      expect(parse("'test'")).toBe('test');
       expect(parse('test')).toBe('test');
       expect(parse('1234')).toBe('1234');
       expect(parse('12.34')).toBe('12.34');
