@@ -23,7 +23,7 @@ const consumeToken = (
     throw new Error(`Expected '${token}'`);
   }
 
-  input = input.substr(token.length);
+  input = input.substring(token.length);
   [, input] = consumeWhitespaceAndComments(input);
   return [token, input];
 };
@@ -34,16 +34,16 @@ const consumeWhitespaceAndComments = (input: string): [null, string] => {
   while (input.length > 0) {
     if (skipUntil) {
       if (!input.startsWith(skipUntil)) {
-        input = input.substr(1);
+        input = input.substring(1);
         continue;
       } else {
-        input = input.substr(skipUntil.length);
+        input = input.substring(skipUntil.length);
         skipUntil = undefined;
       }
     }
 
-    const char = input.substr(0, 1);
-    input = input.substr(1);
+    const char = input.substring(0, 1);
+    input = input.substring(1);
 
     if (WHITESPACE.includes(char)) {
       continue;
@@ -80,8 +80,8 @@ const consumeValue = (input: string): [Value, string] => {
 
   let result: Value = null;
 
-  const char = input.substr(0, 1);
-  input = input.substr(1);
+  const char = input.substring(0, 1);
+  input = input.substring(1);
 
   switch (char) {
     case '{':
@@ -153,7 +153,7 @@ const consumeValue = (input: string): [Value, string] => {
 
       while (input.charAt(0) !== '>') {
         const digit = input.charAt(0);
-        input = input.substr(1);
+        input = input.substring(1);
 
         if (HEX_DIGIT_REGEX.test(digit)) {
           hexString += digit;
@@ -189,9 +189,9 @@ const consumeValue = (input: string): [Value, string] => {
         result += input.charAt(0);
         if (input.charAt(0) === '\\') {
           result += input.charAt(1);
-          input = input.substr(2);
+          input = input.substring(2);
         } else {
-          input = input.substr(1);
+          input = input.substring(1);
         }
 
         if (input.length === 0) {
@@ -211,7 +211,7 @@ const consumeValue = (input: string): [Value, string] => {
       result = char;
       while (UNQUOTED_STRING_CHAR_REGEX.test(input.charAt(0))) {
         result += input.charAt(0);
-        input = input.substr(1);
+        input = input.substring(1);
 
         if (input.length === 0) {
           break;
